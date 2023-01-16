@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css b5 -->
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css" />
+    <!-- swiperjs -->
+    <link rel="stylesheet" href="./src/css/swiper-bundle.min.css" />
+    <!-- native style -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <!-- icon -->
+    <link rel="icon" href="./public/images/logo.png" />
+    <title>Resto Restaurant</title>
+  </head>
+  <body class="bg-body-50 font-poppins fs-6">
+    <!-- header -->
+    <header class="my-lg-2">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container mx-auto px-0">
+          <div
+            class="navigation w-100 d-lg-flex align-items-lg-center justify-content-lg-between"
+          >
+            <ul class="navbar-nav fs-7 gap-lg-3 fw-semibold">
+              <li class="nav-item position-relative">
+                <a
+                  class="nav-link text-default active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+                <div class="line-before"></div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-default dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item fs-7" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item fs-7" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item fs-7" href="#"
+                      >Something else here</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-default" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-default" href="#">About Us</a>
+              </li>
+            </ul>
+            <a
+              class="navbar-brand fs-5 text-default fw-extrabold font-nunito"
+              href="#"
+            >
+              <img
+                src="./public/images/logo.png"
+                alt="logo"
+                width="21"
+                height="23"
+                class="d-inline-block align-text-top"
+              />
+              Resto
+            </a>
+            <form class="d-flex align-items-lg-center gap-3">
+              <div
+                class="searching bg-white d-flex gap-2 py-default px-3 rounded align-items-lg-center"
+              >
+                <img
+                  class="pointer"
+                  width="15"
+                  src="./public/images/icon-search.png"
+                  alt="search"
+                />
+                <input
+                  class="px-0 border-0"
+                  type="search"
+                  placeholder="Search your favorite food"
+                />
+              </div>
+              <button
+                class="btn bg-soft-blue text-blue-lilac hover-login font-poppins fw-semibold border-0 py-default px-4 fs-7"
+                type="submit"
+              >
+                Log in
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- hero images -->
+    <section class="content-hero py-4">
+      <div class="card-restaurant position-absolute bg-white rounded-4">
+        <div
+          class="rating d-flex align-items-lg-center mb-1 gap-1 fs-xs fw-semibold text-soft-orange"
+        >
+          <img
+            class=""
+            src="./public/images/icon-star.png"
+            alt="start"
+            width="11"
+          />
+          <img src="./public/images/icon-star.png" alt="start" width="11" />
+          <img src="./public/images/icon-star.png" alt="start" width="11" />
+          <img src="./public/images/icon-star.png" alt="start" width="11" />
+          <img src="./public/images/icon-star.png" alt="start" width="11" />
+          5.0
+          <span class="text-soft-gray fw-normal">(5.2k+)</span>
+        </div>
+        <h4 class="fs-heading fw-semibold mb-1">Padang Restaurant</h4>
+        <p class="text-soft-gray fs-xs fw-semibold mb-1">
+          IDR 49.999 - IDR 560.000
+        </p>
+        <span class="location d-flex align-items-lg-center gap-1">
+          <img src="./public/images/icon-maps.png" width="12" alt="maps" />
+          <p class="text-location fs-xxs mb-0">Padang, Indonesia</p>
+        </span>
+        <button
+          class="btn-default d-flex mt-4 fs-xxs fw-semibold bg-soft-orange border-0 rounded align-items-lg-center gap-2"
+          type="submit"
+        >
+          Make Reservation
+          <img src="./public/images/chev-right-black.png" width="4" alt="" />
+        </button>
+        <div class="information mt-2 d-flex align-items-lg-center gap-1">
+          <img src="./public/images/icon-insight.png" width="11" alt="" />
+          <p class="fs-tiny text-soft-gray mb-0 lh-1">No extra cost</p>
+        </div>
+      </div>
+      <div class="container-fluid px-0 text-end">
+        <div class="swiper mySwiper d-inline-block">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./public/images/bg-hero-intro-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./public/images/bg-hero-intro-2.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./public/images/bg-hero-intro-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./public/images/bg-hero-intro-4.jpg" alt="" />
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+    </section>
+    <!-- Special banefit for you -->
+    <section class="banefit py-7">
+      <div class="container mx-auto px-0">
+        <p
+          class="text-blue-lilac mb-2 fs-md fw-semibold text-uppercase text-center"
+        >
+          Special Benefit For You
+        </p>
+        <h2 class="text-default fw-semibold text-center fs-lg">
+          Why Should Choose Us?
+        </h2>
+        <div
+          class="rows-banefit mt-5 d-flex align-items-lg-center justify-content-lg-between"
+        >
+          <div class="cols-banefit">
+            <div
+              class="card border-0 bg-white pt-4 rounded-4 rounded-default overflow-hidden"
+            >
+              <div
+                class="card-images mb-4 mx-auto max-w-max p-2 rounded-5 bg-opc-orange"
+              >
+                <img
+                  width="35"
+                  src="./public/images/icon-extra-discounts.png"
+                  alt="extra discounts"
+                />
+              </div>
+              <div class="card-body text-center p-0">
+                <h6 class="card-title fs-7 fw-semibold mb-2">
+                  Extra Discounts
+                </h6>
+                <p class="card-text fs-xs text-soft-gray px-default mb-0">
+                  Get your special discount by using our reservation
+                </p>
+                <a
+                  href="#"
+                  class="btn view-details btn-default d-flex mt-5 py-3 fs-xxs fw-semibold justify-content-lg-center bg-white border-0 rounded-3 align-items-lg-center gap-2"
+                  >View Details
+                  <img
+                    src="./public/images/chev-right-black.png"
+                    width="4"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="cols-banefit">
+            <div
+              class="card border-0 bg-white pt-4 rounded-4 rounded-default overflow-hidden"
+            >
+              <div
+                class="card-images mb-4 mx-auto max-w-max p-2 rounded-5 bg-opc-orange"
+              >
+                <img
+                  width="35"
+                  src="./public/images/icon-come&eat.png"
+                  alt="extra discounts"
+                />
+              </div>
+              <div class="card-body text-center p-0">
+                <h6 class="card-title fs-7 fw-semibold mb-2">Come and Eat</h6>
+                <p class="card-text fs-xs text-soft-gray px-default mb-0">
+                  Get your own table quickly & without waiting in line
+                </p>
+                <a
+                  href="#"
+                  class="btn view-details btn-default d-flex mt-5 py-3 fs-xxs fw-semibold justify-content-lg-center bg-white border-0 rounded-3 align-items-lg-center gap-2"
+                  >View Details
+                  <img
+                    src="./public/images/chev-right-black.png"
+                    width="4"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="cols-banefit">
+            <div
+              class="card border-0 bg-white pt-4 rounded-4 rounded-default overflow-hidden"
+            >
+              <div
+                class="card-images mb-4 mx-auto max-w-max p-2 rounded-5 bg-opc-orange"
+              >
+                <img
+                  width="35"
+                  src="./public/images/icon-no-extra-fee.png"
+                  alt="extra discounts"
+                />
+              </div>
+              <div class="card-body text-center p-0">
+                <h6 class="card-title fs-7 fw-semibold mb-2">No Extra Fee</h6>
+                <p class="card-text fs-xs text-soft-gray px-default mb-0">
+                  Get tax free if you want to order food and make a reservation
+                </p>
+                <a
+                  href="#"
+                  class="btn view-details btn-default d-flex mt-5 py-3 fs-xxs fw-semibold justify-content-lg-center bg-white border-0 rounded-3 align-items-lg-center gap-2"
+                  >View Details
+                  <img
+                    src="./public/images/chev-right-black.png"
+                    width="4"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="cols-banefit">
+            <div
+              class="card border-0 bg-white pt-4 rounded-4 rounded-default overflow-hidden"
+            >
+              <div
+                class="card-images mb-4 mx-auto max-w-max p-2 rounded-5 bg-opc-orange"
+              >
+                <img
+                  width="35"
+                  src="./public/images/icon-guaranteed-cleanliness.png"
+                  alt="extra discounts"
+                />
+              </div>
+              <div class="card-body text-center p-0">
+                <h6 class="card-title fs-7 fw-semibold mb-2">
+                  Guaranteed Cleanliness
+                </h6>
+                <p class="card-text fs-xs text-soft-gray px-default mb-0">
+                  We ensure the cleanliness of the place as well as the food
+                </p>
+                <a
+                  href="#"
+                  class="btn view-details btn-default d-flex mt-5 py-3 fs-xxs fw-semibold justify-content-lg-center bg-white border-0 rounded-3 align-items-lg-center gap-2"
+                  >View Details
+                  <img
+                    src="./public/images/chev-right-black.png"
+                    width="4"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Most popular restaurant -->
+    <section class="most-popular-restaunrants pt-default pb-default">
+      <div class="container mx-auto px-0">
+        <div
+          class="rows-popular-restaurant d-flex justify-content-lg-between align-items-lg-center"
+        >
+          <div class="cols-popular-restaurant col-4">
+            <p class="fs-md text-blue-lilac text-uppercase mb-1 fw-semibold">
+              Top 3 Featured Restaurant
+            </p>
+            <h5 class="fs-lg mb-3 text-default fw-semibold">
+              Most Popular Restaurant
+            </h5>
+            <p class="fs-7 text-soft-gray">
+              The best restaurant in our opinion is how much customers like it
+              in terms of place, price, comfort and of course the taste of the
+              food itself.
+            </p>
+            <button
+              class="btn-default-popular d-flex px-4 text-default mt-5 fs-xxs fw-semibold bg-soft-orange border-0 rounded align-items-lg-center gap-2"
+              type="submit"
+            >
+              View All Restaurant
+              <img
+                src="./public/images/chev-right-black.png"
+                width="4"
+                alt=""
+              />
+            </button>
+          </div>
+          <div
+            class="cols-popular-restaurant d-flex gap-3 justify-content-lg-between col-7"
+          >
+            <div
+              class="card-images-popular active position-relative overflow-hidden"
+            >
+              <div
+                class="content-images d-flex align-items-lg-center justify-content-lg-between p-3 rounded-4 position-absolute bg-white"
+              >
+                <div class="cols-images">
+                  <div
+                    class="rating d-flex align-items-lg-center mb-1 gap-1 fs-xs fw-semibold text-soft-orange"
+                  >
+                    <img
+                      src="./public/images/icon-star.png"
+                      alt="start"
+                      width="12"
+                    />
+                    5.0
+                    <span class="text-soft-gray fw-normal">(7.6k+)</span>
+                  </div>
+                  <h5 class="fs-md fw-semibold mb-1">Bind Balorant</h5>
+                  <span class="location d-flex align-items-lg-center gap-1">
+                    <img
+                      src="./public/images/icon-maps.png"
+                      width="12"
+                      alt="maps"
+                    />
+                    <p class="text-location text-soft-gray fs-xxs mb-0">
+                      Jakarta, Indonesia
+                    </p>
+                  </span>
+                </div>
+                <div class="cols-images">
+                  <span class="arrow d-block pointer border-0 bg-soft-orange">
+                    <img
+                      class="m-auto"
+                      src="./public/images/arrow-right.png"
+                      alt="arrow-right"
+                      width="10"
+                    />
+                  </span>
+                </div>
+              </div>
+              <img
+                class="cover-images"
+                src="./public/images/popular-restaurant-1.png"
+                alt="restaurant popular"
+              />
+            </div>
+            <div class="card-images-popular overflow-hidden">
+              <img
+                class="cover-images"
+                src="./public/images/popular-restaurants-2.png"
+                alt="restaurant popular"
+              />
+            </div>
+            <div class="card-images-popular overflow-hidden">
+              <img
+                class="cover-images"
+                src="./public/images/popular-restaurant-3.png"
+                alt="restaurant popular"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Restaurant near you -->
+    <section class="restaurant-near-you py-7">
+      <div class="container mx-auto">
+        <div class="d-flex align-items-lg-center justify-content-lg-between">
+          <div class="title">
+            <p class="fs-md text-blue-lilac text-uppercase mb-1 fw-semibold">
+              Restaurant based by city
+            </p>
+            <h5 class="fs-lg text-default fw-semibold">Restaurant Near You</h5>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn bg-soft-secondary fs-md btn-default fw-normal dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                class="me-1"
+                src="./public/images/icon-maps.png"
+                width="12"
+                alt="maps"
+              />
+              Jakarta, Indonesia
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fs-md" href="#">Tokyo, Jepang</a></li>
+              <li><a class="dropdown-item fs-md" href="#">Moskow, Rusia</a></li>
+              <li><a class="dropdown-item fs-md" href="#">Roma, Italia</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="rows-restaurant-near-you mt-6 d-flex flex-nowrap gap-3 align-items-lg-center"
+        >
+          <div class="cols-restaurant-near-you">
+            <div
+              class="card-images-restaurant position-relative overflow-hidden"
+            >
+              <div
+                class="content-images d-flex align-items-lg-center justify-content-lg-between p-3 rounded-4 position-absolute bg-white"
+              >
+                <div class="cols-images">
+                  <div
+                    class="rating d-flex align-items-lg-center mb-1 gap-1 fs-xs fw-semibold text-soft-orange"
+                  >
+                    <img
+                      src="./public/images/icon-star.png"
+                      alt="start"
+                      width="12"
+                    />
+                    5.0
+                    <span class="text-soft-gray fw-normal">(6.6k+)</span>
+                  </div>
+                  <h5 class="fs-md fw-semibold mb-1 text-default">
+                    Batavia Restaurant
+                  </h5>
+                  <p
+                    class="text-location text-soft-gray fs-xs fw-semibold mb-0"
+                  >
+                    IDR 29.000 - IDR 259.999
+                  </p>
+                </div>
+                <div class="cols-images">
+                  <span class="arrow d-block pointer border-0 bg-soft-orange">
+                    <img
+                      class="m-auto"
+                      src="./public/images/arrow-right.png"
+                      alt="arrow-right"
+                      width="10"
+                    />
+                  </span>
+                </div>
+              </div>
+              <img
+                class="cover-images"
+                src="./public/images/restaurant-near-1.png"
+                alt="restaurant popular"
+              />
+            </div>
+          </div>
+          <div class="cols-restaurant-near-you">
+            <div
+              class="card-images-restaurant position-relative overflow-hidden"
+            >
+              <div
+                class="content-images d-flex align-items-lg-center justify-content-lg-between p-3 rounded-4 position-absolute bg-white"
+              >
+                <div class="cols-images">
+                  <div
+                    class="rating d-flex align-items-lg-center mb-1 gap-1 fs-xs fw-semibold text-soft-orange"
+                  >
+                    <img
+                      src="./public/images/icon-star.png"
+                      alt="start"
+                      width="12"
+                    />
+                    5.0
+                    <span class="text-soft-gray fw-normal">(3.6k+)</span>
+                  </div>
+                  <h5 class="fs-md fw-semibold mb-1 text-default">
+                    Split Ascent Restaurant
+                  </h5>
+                  <p
+                    class="text-location text-soft-gray fs-xs fw-semibold mb-0"
+                  >
+                    IDR 49.999 - IDR 560.000
+                  </p>
+                </div>
+                <div class="cols-images">
+                  <span class="arrow d-block pointer border-0 bg-soft-orange">
+                    <img
+                      class="m-auto"
+                      src="./public/images/arrow-right.png"
+                      alt="arrow-right"
+                      width="10"
+                    />
+                  </span>
+                </div>
+              </div>
+              <img
+                class="cover-images"
+                src="./public/images/restaurant-near-2.png"
+                alt="restaurant popular"
+              />
+            </div>
+          </div>
+          <div class="cols-restaurant-near-you">
+            <div
+              class="card-images-restaurant position-relative overflow-hidden"
+            >
+              <div
+                class="content-images d-flex align-items-lg-center justify-content-lg-between p-3 rounded-4 position-absolute bg-white"
+              >
+                <div class="cols-images">
+                  <div
+                    class="rating d-flex align-items-lg-center mb-1 gap-1 fs-xs fw-semibold text-soft-orange"
+                  >
+                    <img
+                      src="./public/images/icon-star.png"
+                      alt="start"
+                      width="12"
+                    />
+                    5.0
+                    <span class="text-soft-gray fw-normal">(11k+)</span>
+                  </div>
+                  <h5 class="fs-md fw-semibold mb-1 text-default">
+                    Daza Fracture Restaurant
+                  </h5>
+                  <p
+                    class="text-location text-soft-gray fs-xs fw-semibold mb-0"
+                  >
+                    IDR 29.999 - IDR 560.000
+                  </p>
+                </div>
+                <div class="cols-images">
+                  <span class="arrow d-block pointer border-0 bg-soft-orange">
+                    <img
+                      class="m-auto"
+                      src="./public/images/arrow-right.png"
+                      alt="arrow-right"
+                      width="10"
+                    />
+                  </span>
+                </div>
+              </div>
+              <img
+                class="cover-images"
+                src="./public/images/restaurant-near-3.png"
+                alt="restaurant popular"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="btn-default-restaurant mx-auto d-flex px-4 text-default mt-5 fs-xxs fw-semibold bg-soft-orange border-0 rounded align-items-lg-center gap-2"
+          type="submit"
+        >
+          View All Restaurant
+          <img src="./public/images/chev-right-black.png" width="4" alt="" />
+        </button>
+      </div>
+    </section>
+    <!-- Expert chefs in fuddy -->
+    <section class="chefs pb-default">
+      <div class="container mx-auto">
+        <div
+          class="rows-chef d-flex align-items-lg-start justify-content-lg-center"
+        >
+          <div class="cols-chef col-6">
+            <div class="hero-images-chef mx-auto position-relative">
+              <img
+                class="rounded-4"
+                src="./public/images/chef.png"
+                alt="chefs"
+                width="100%"
+              />
+              <!-- absolute -->
+              <div
+                class="experience position-absolute text-center bg-white rounded-4 py-4 px-experience"
+              >
+                <div
+                  class="card-images mb-3 mx-auto max-w-max p-3 rounded-5 bg-opc-orange"
+                >
+                  <img
+                    width="30"
+                    src="./public/images/icon-shield.png"
+                    alt="extra discounts"
+                  />
+                </div>
+                <h6 class="fs-default text-default mb-1 fw-semibold mb-0">
+                  12 Years
+                </h6>
+                <p class="fs-xs mb-0 text-soft-gray">Experience</p>
+              </div>
+              <div
+                class="view-detail d-flex align-items-lg-center position-absolute bg-white rounded-4 px-view-detail py-3"
+              >
+                <div class="thumbnail rounded-3 overflow-hidden">
+                  <img
+                    src="./public/images/thumbnail.png"
+                    width="70"
+                    alt="thumbnail"
+                  />
+                </div>
+                <div class="info-detail">
+                  <p class="mb-1 fs-xs text-soft-gray">Chef at restaurant:</p>
+                  <h6 class="mb-3 text-default fw-semibold fs-7">
+                    Pearl Dolphin
+                  </h6>
+                  <div
+                    class="view-details d-flex align-items-lg-center pointer"
+                  >
+                    <p class="m-0 fs-xxs text-soft-orange">View Details</p>
+                    <span class="chev d-block border-0">
+                      <img
+                        class="m-auto"
+                        src="./public/images/chev-right-orange.png"
+                        alt="chev"
+                        width="3"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cols-chef col-6">
+            <div class="title">
+              <p class="fs-md text-blue-lilac text-uppercase mb-1 fw-semibold">
+                Top 4 expert chefs
+              </p>
+              <h5 class="fs-lg mb-3 text-default fw-semibold">
+                Expert Chefs In Fuddy
+              </h5>
+            </div>
+            <div class="info-detail-chef d-flex flex flex-column gap-3">
+              <div
+                class="cols-info-detail active d-flex rounded-4 align-items-lg-center justify-content-lg-between"
+              >
+                <div class="cols-images">
+                  <span
+                    class="text-soft-gray d-block mb-1 fs-md fw-normal text-uppercase"
+                    >Pizza</span
+                  >
+                  <h5 class="fs-default fw-semibold mb-1">Phoenix Satcheup</h5>
+                  <span class="location d-flex align-items-lg-center gap-1">
+                    <img
+                      src="./public/images/icon-maps.png"
+                      width="12"
+                      alt="maps"
+                    />
+                    <p class="text-location text-soft-gray fs-xxs mb-0">
+                      Jakarta, Indonesia
+                    </p>
+                  </span>
+                </div>
+                <div
+                  class="profile-details d-flex align-items-lg-center pointer"
+                >
+                  <p class="m-0 fs-xxs text-soft-orange">Profile Details</p>
+                  <span class="chev d-block border-0">
+                    <img
+                      class="m-auto"
+                      src="./public/images/chev-right-orange.png"
+                      alt="chev"
+                      width="4"
+                    />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="cols-info-detail d-flex rounded-4 align-items-lg-center justify-content-lg-between"
+              >
+                <div class="cols-images">
+                  <span
+                    class="text-soft-gray d-block mb-1 fs-md fw-normal text-uppercase"
+                    >Vegan</span
+                  >
+                  <h5 class="fs-default fw-semibold mb-1">Chamber Botfrag</h5>
+                  <span class="location d-flex align-items-lg-center gap-1">
+                    <img
+                      src="./public/images/icon-maps.png"
+                      width="12"
+                      alt="maps"
+                    />
+                    <p class="text-location text-soft-gray fs-xxs mb-0">
+                      Bandung, Indonesia
+                    </p>
+                  </span>
+                </div>
+                <div
+                  class="profile-details d-flex align-items-lg-center pointer"
+                >
+                  <p class="m-0 fs-xxs text-soft-orange">Profile Details</p>
+                  <span class="chev d-block border-0">
+                    <img
+                      class="m-auto"
+                      src="./public/images/chev-right-orange.png"
+                      alt="chev"
+                      width="4"
+                    />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="cols-info-detail d-flex rounded-4 align-items-lg-center justify-content-lg-between"
+              >
+                <div class="cols-images">
+                  <span
+                    class="text-soft-gray d-block mb-1 fs-md fw-normal text-uppercase"
+                    >Roast chicken</span
+                  >
+                  <h5 class="fs-default fw-semibold mb-1">Asep Vandal</h5>
+                  <span class="location d-flex align-items-lg-center gap-1">
+                    <img
+                      src="./public/images/icon-maps.png"
+                      width="12"
+                      alt="maps"
+                    />
+                    <p class="text-location text-soft-gray fs-xxs mb-0">
+                      Sunda, Indonesia
+                    </p>
+                  </span>
+                </div>
+                <div
+                  class="profile-details d-flex align-items-lg-center pointer"
+                >
+                  <p class="m-0 fs-xxs text-soft-orange">Profile Details</p>
+                  <span class="chev d-block border-0">
+                    <img
+                      class="m-auto"
+                      src="./public/images/chev-right-orange.png"
+                      alt="chev"
+                      width="4"
+                    />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="cols-info-detail d-flex rounded-4 align-items-lg-center justify-content-lg-between"
+              >
+                <div class="cols-images">
+                  <span
+                    class="text-soft-gray d-block mb-1 fs-md fw-normal text-uppercase"
+                    >Beef steak</span
+                  >
+                  <h5 class="fs-default fw-semibold mb-1">I made invoker</h5>
+                  <span class="location d-flex align-items-lg-center gap-1">
+                    <img
+                      src="./public/images/icon-maps.png"
+                      width="12"
+                      alt="maps"
+                    />
+                    <p class="text-location text-soft-gray fs-xxs mb-0">
+                      Bali, Indonesia
+                    </p>
+                  </span>
+                </div>
+                <div
+                  class="profile-details d-flex align-items-lg-center pointer"
+                >
+                  <p class="m-0 fs-xxs text-soft-orange">Profile Details</p>
+                  <span class="chev d-block border-0">
+                    <img
+                      class="m-auto"
+                      src="./public/images/chev-right-orange.png"
+                      alt="chev"
+                      width="4"
+                    />
+                  </span>
+                </div>
+              </div>
+              <button
+                class="btn-default-chef mt-3 d-flex max-w-max px-4 text-default fs-xxs fw-semibold bg-soft-orange border-0 rounded align-items-lg-center gap-2"
+                type="submit"
+              >
+                View All Chef
+                <img
+                  src="./public/images/chev-right-black.png"
+                  width="4"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="pt-4 pb-4 text-center">
+      <a
+        class="d-inline-block text-decoration-none text-copyrights copyrights fs-xxs"
+        href="https://github.com/JfeStudio"
+        >© 2022 CREATED BY MAMAN ALL RIGHTS RESERVED.</a
+      >
+    </footer>
+    <!--  ================== ### =================  -->
+    <!-- js b5 -->
+    <script src="./src/js/bootstrap.bundle.min.js"></script>
+    <!-- js swiper -->
+    <script src="./src/js/swiper-bundle.min.js"></script>
+    <!-- vanilla js -->
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
